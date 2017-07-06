@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>Bootstrap 101 Template</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css">
+		@media (min-width: 768px) {
+			#slider_sub{
+				width:200px;
+				margin-top: 51px;
+				margin-left: 5px;
+				position: absolute;
+				z-index: 1;
+				height: 600px;
+			}
+			.mysearch{
+				margin:10px 0;
+				margin-left: 5px;
+			}
+			.page_main{
+				margin-top: 10px;
+				margin-left: 210px;
+			}
+		}
+	</style>
+</head>
+<body>
+<!--- 导航-->
+<nav class="navbar navbar-default navbar-static-top">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="#" class="navbar-brand">网站后台管理</a>
+
+	</div>
+	<ul class="nav navbar-nav navbar-right" style="margin-right: 25px;">
+		<li><a href="#"><span class="badge"style="background:darkorange">信息(123)</span></a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-off"></span>注销</a></li>
+	</ul>
+
+<!------侧边功能栏------>
+	<div class="navbar-default navbar-collapse" id="slider_sub">
+		<ul class="nav">
+			<li>
+				<!---搜索---->
+				<div class="input-group mysearch">
+					<input type="text" class="form-control">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+
+			</li>
+			<li>
+				<a href="#sub1" class="collapse" data-toggle="collapse">系统功能 <span class="glyphicon glyphicon-th-list pull-right"></span></a>
+				<ul id="sub1" class="nav collapse">
+					<li><a href="#"><span class="glyphicon glyphicon-file"></span>系统信息</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>管理员管理</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>日志信息</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#sub2" class="collapse" data-toggle="collapse">产品功能 <span class="glyphicon glyphicon-th-list pull-right"></span></a>
+				<ul id="sub2" class="nav collapse">
+					<li><a href="#">系统信息</a></li>
+					<li><a href="#">管理员管理</a></li>
+					<li><a href="#">日志信息</a></li>
+					<li><a href="#">退出</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#sub3" class="collapse" data-toggle="collapse">栏目功能 <span class="glyphicon glyphicon-th-list pull-right"></span></a>
+				<ul id="sub3" class="nav collapse">
+					<li><a href="#">系统信息</a></li>
+					<li><a href="#">管理员管理</a></li>
+					<li><a href="#">日志信息</a></li>
+					<li><a href="#">退出</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!------主体部分---->
+<nav>
+	<div class="page_main" style="background: rgba(182,223,224,0.61)">
+		<ol class="breadcrumb">
+			<li><a href="#">管理首页</a></li>
+			<li><a href="#">栏目</a></li>
+			<li class="active">增加栏目</li>
+		</ol>
+	</div>
+</nav>
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
